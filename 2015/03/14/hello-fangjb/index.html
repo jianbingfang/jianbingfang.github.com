@@ -1,0 +1,477 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Hello fangjb.me! - Hexo个人博客搭建流程 | fice&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="fice">
+    
+
+    
+    <meta name="description" content="其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的whl同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello fangjb.me! - Hexo个人博客搭建流程">
+<meta property="og:url" content="http://fice.me/2015/03/14/hello-fangjb/index.html">
+<meta property="og:site_name" content="fice's blog">
+<meta property="og:description" content="其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的whl同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够">
+<meta property="og:image" content="/img/201503/dnspod_1.png">
+<meta property="og:image" content="/img/201503/dnspod_2.png">
+<meta property="og:image" content="/img/201503/godaddy_1.png">
+<meta property="og:image" content="/img/201503/godaddy_2.png">
+<meta property="og:image" content="/img/201503/godaddy_3.png">
+<meta property="og:image" content="/img/201503/disqus.png">
+<meta property="og:image" content="/img/201503/duoshuo.png">
+<meta property="og:image" content="/img/201503/baidu_tongji_1.png">
+<meta property="og:image" content="/img/201503/baidu_tongji_3.png">
+<meta property="og:image" content="/img/201503/baidu_tongji_2.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hello fangjb.me! - Hexo个人博客搭建流程">
+<meta name="twitter:description" content="其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的whl同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够">
+
+    
+    <link rel="alternative" href="/atom.xml" title="fice&#39;s blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="fice&#39;s blog">fice&#39;s blog</a></h1>
+				<h2 class="blog-motto">&quot;An apple a day keeps the doctor away.&quot; But many doctors around me use the Apple everyday... = =#</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:fice.me">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/03/14/hello-fangjb/" title="Hello fangjb.me! - Hexo个人博客搭建流程" itemprop="url">Hello fangjb.me! - Hexo个人博客搭建流程</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://fice.me/about" title="fice" target="_blank" itemprop="author">fice</a>
+		
+  <p class="article-time">
+    <time datetime="2015-03-14T05:27:09.000Z" itemprop="datePublished"> 发表于 2015-03-14</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建Hexo博客"><span class="toc-number">1.</span> <span class="toc-text">搭建Hexo博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Hexo"><span class="toc-number">1.1.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#建立本地博客"><span class="toc-number">1.2.</span> <span class="toc-text">建立本地博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改博客配置"><span class="toc-number">1.3.</span> <span class="toc-text">修改博客配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写博客"><span class="toc-number">1.4.</span> <span class="toc-text">写博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换博客主题"><span class="toc-number">1.5.</span> <span class="toc-text">更换博客主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署至GitHub_Pages"><span class="toc-number">1.6.</span> <span class="toc-text">部署至GitHub Pages</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绑定自己的域名"><span class="toc-number">2.</span> <span class="toc-text">绑定自己的域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#购买域名"><span class="toc-number">2.1.</span> <span class="toc-text">购买域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置DNS"><span class="toc-number">2.2.</span> <span class="toc-text">配置DNS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#向GitHub_Pages中添加CNAME文件"><span class="toc-number">2.3.</span> <span class="toc-text">向GitHub Pages中添加CNAME文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他辅助模块"><span class="toc-number">3.</span> <span class="toc-text">其他辅助模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#“多说”留言板"><span class="toc-number">3.1.</span> <span class="toc-text">“多说”留言板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#百度统计"><span class="toc-number">3.2.</span> <span class="toc-text">百度统计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CONGRATULATIONS"><span class="toc-number">4.</span> <span class="toc-text">CONGRATULATIONS</span></a></li></ol>
+		
+		</div>
+		
+		<p>其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的<a href="http://whlontheroad.com" target="_blank" rel="external">whl</a>同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够帮助到您。第一篇也不知道写点什么好，索性就把本站的建立过程介绍一下吧，简单来说这是一个用Hexo建立并托管在GitHub Pages上的静态博客。</p>
+<a id="more"></a>
+<h2 id="搭建Hexo博客">搭建Hexo博客</h2><h3 id="安装Hexo">安装Hexo</h3><p><a href="http://hexo.io" target="_blank" rel="external">Hexo</a>是一个基于<a href="http://nodejs.org" target="_blank" rel="external">Node.js</a>的开源博客系统，出自台湾的一位大学生之手（表示膜拜…）。方便、快速、支持Markdown、易部署、插件众多，对于程序猿来说简直是不可多得的好工具，如果已经安装过Node.js，那么只需要在Node控制台里<code>npm install hexo -g</code>一下即可使用（如果您未使用过Node.js，可移步<a href="http://nodejs.org" target="_blank" rel="external">Node官网</a>下载安装）。</p>
+<h3 id="建立本地博客">建立本地博客</h3><p>Hexo安装好后，建立一个本地的博客系统就是一件非常简单的事了，只需要再执行如下几行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;  // 初始化博客到文件夹&lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;         // 切换工作目录到&lt;folder&gt;</span><br><span class="line">$ npm install         // 安装博客系统相关插件</span><br><span class="line">$ hexo g              // 或hexo generate, 将md文件编译生成本地静态html文件</span><br><span class="line">$ hexo s              // 或hexo server, 启动hexo本地服务器</span><br></pre></td></tr></table></figure></p>
+<p>此时打开浏览器，输入<a href="http://localhost:4000" target="_blank" rel="external">localhost:4000</a>即可看到博客的初始界面。</p>
+<h3 id="修改博客配置">修改博客配置</h3><p>Hexo中主要的配置项都在根目录下的<code>_config.yml</code>文件里，配置项名称都浅显易懂，更详细的配置可参考这篇博文，我也是按照那的介绍做的，这里不再做重复工作。</p>
+<p>比较重要的一点是配置<code>deploy</code>项，为了方便之后直接用命令<code>hexo d</code>或<code>hexo deploy</code>一键部署到GitHub Pages上（如果您还不了解什么是GitHub Pages，请移步<a href="https://pages.github.com/" target="_blank" rel="external">这里</a>并给自己建一个~），需要先给Hexo安装<code>node-git-deploy</code>插件(Hexo 3.0版本开始默认不包含该插件了)，安装命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-git-deploy --save</span><br></pre></td></tr></table></figure></p>
+<p>然后修改<code>_config.yml</code>里的内容：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github<span class="class">.com</span>:&lt;YOUR_GITHUB_NAME&gt;/&lt;YOUR_GITHUB_NAME&gt;<span class="class">.github</span><span class="class">.com</span><span class="class">.git</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<h3 id="写博客">写博客</h3><p>运行以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n <span class="string">"Blog Name"</span></span><br><span class="line">或者</span><br><span class="line">$ hexo new <span class="string">"Blog Name"</span></span><br></pre></td></tr></table></figure></p>
+<p>Hexo就会在<code>/source/_posts</code>目录下新建一个<code>blog-name.md</code>的文件，然后编辑此文件即可，在编写完文章内容后，记得要执行<code>hexo g</code>，这样Hexo才会把<code>.md</code>文件编译为静态的<code>.html</code>页面以供浏览器访问，<code>/source</code>目录下的所有文件最后都会被编译或复制到<code>/public</code>目录中，并且这里的内容才是最后实际被部署至GitHub上的文件。</p>
+<p>所以，如果要添加自己的文件内容，例如图片，则需要在<code>/source</code>目录下自己新建一个<code>/img</code>目录，然后把图片放在这里，<code>hexo g</code>之后Hexo会自动生成并拷贝到相应的<code>/public</code>目录中，如果只是单独在<code>/public/img</code>里放置了图片，那么每次<code>hexo g</code>之后图片都会被覆盖清空。其他文件同理。</p>
+<h3 id="更换博客主题">更换博客主题</h3><p>Hexo官网收录了<a href="http://hexo.io/themes/" target="_blank" rel="external">8个主题</a>，本站目前所用的即是其中的<a href="http://wuchong.me/jacman/" target="_blank" rel="external">Jackman</a>，如果你对这8个主题都不满意，也可以去<a href="https://github.com/" target="_blank" rel="external">GitHub</a>上搜索大家开源的hexo主题，或者自己动手写一个！主题的安装和更换也都是很方便的，只许把主题文件夹放到<code>/themes</code>目录下即可，例如Hexo初始默认提供的主题是<a href="http://hexo.io/hexo-theme-landscape/" target="_blank" rel="external">Landscape</a>，相关主题的介绍页都有很详细的介绍，这里不再赘述。</p>
+<h3 id="部署至GitHub_Pages">部署至GitHub Pages</h3><p>配置好你心怡的主题，并在本地浏览无误后，最后一步就是上传至GitHub Pages了，如果此前步骤进行顺利，那么只需要输入以下命令即可（部署前记得要先<code>hexo g</code>过）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>其间可能需要输入你的GitHub密码，提示成功后可以进入自己的GitHub查看该项目提交时间是否正确，然后就可以通过网址++YOUR_GITHUB_NAME.github.io++查看到自己的页面了。网上貌似很多人说GitHub的访问速度很慢，于是有不少人是托管在的<a href="http://gitcafe.com" target="_blank" rel="external">GitCafe</a>上的（一个国内的GitHub，也提供类似GitHub Pages的功能）,我自己试了一下GitHub的网页，速度还不错，基本没有空白页等待的情况，也就懒得再折腾了，当然，如果你是土豪，也可以自己租用一个阿里云之类的服务器去部署。</p>
+<p>至此一个可供大家访问的博客就搭建完毕了！</p>
+<p>什么？嫌这个域名又丑又长？好吧，那我们就去换一个吧。</p>
+<h2 id="绑定自己的域名">绑定自己的域名</h2><h3 id="购买域名">购买域名</h3><p>域名服务商推荐去<a href="https://www.godaddy.com/" target="_blank" rel="external">GoDaddy</a>购买（名字很霸气，“去你大爷的”…），这是一家国外的服务商，并且支持支付宝付款，挺方便，网站做的也很好看，操作性很赞，唯一不好的一点是无中文支持，不过对于购买过程也不存在障碍，如果您对自己的英文实在过于自信，也可以选择国内的服务商<a href="http://www.net.cn/" target="_blank" rel="external">万网</a>（好像比GoDaddy的域名要贵个几块钱…）。如果你愿意折腾可以去百度一下GoDaddy的优惠码，据说可以打个5折、3折什么的，我试了两个都没有用就放弃了，反正一年也才60多块钱，就这样吧。。。</p>
+<p>另外提醒一下，如果提交订单失败，并出现订单信息错误的情况，很可能就是因为你填的优惠码有问题，需要重新回到购物车界面乱输过一个错的优惠码，清掉之前输入过的，然后再进行订单的提交（当时在这里坑了我好久…）。</p>
+<h3 id="配置DNS">配置DNS</h3><p>在购买域名后GoDaddy默认提供了一个NS服务地址，不过建议更改为<a href="https://www.dnspod.cn/" target="_blank" rel="external">DNSPod</a>的服务，DNSPod是中国第一大DNS解析服务提供商、第一大域名托管商，国内访问会快一些，更重要的是<strong>免费</strong>。。。</p>
+<p>注册DNSPod账号，然后添加一个域名，例如我的是++fangjb.me++：<img src="/img/201503/dnspod_1.png" alt="DNSPod添加域名"><br>添加好域名后点击进入配置页，并添加两项新的记录，<strong>注意【记录类型】均为”A”</strong>，【记录值】即为GitHub Pages主页的ip地址，可以通过<code>ping &lt;YOUR_GITHUB_NAME&gt;.github.io</code>查看到。<br><img src="/img/201503/dnspod_2.png" alt="DNSPod添加记录"></p>
+<p>ok，DNSPod这边就配置完成了，接下来还要再去GoDaddy那边配置。登录GoDaddy后，点击右上角的【My Account】，然后选择【Manage My Domains】。<br><img src="/img/201503/godaddy_1.png" alt="GoDaddy菜单栏"><br>点击进入自己域名的管理界面，在【SETTINGS】中点击【Nameservers】一栏的【Manage】按钮，删除原来默认的两项Nameserver地址，更改为DNSPod的服务器地址：<code>F1G1NS1.DNSPOD.NET</code>和<code>F1G1NS2.DNSPOD.NET</code>,<br><img src="/img/201503/godaddy_2.png" alt="GoDaddy SETTINGS页面"><br>然后再进入【DNS ZONE FILE】界面，同样把【HOST】一栏中的“Points To”更改为<your_github_name>.github.io的ip地址。<br><img src="/img/201503/godaddy_3.png" alt="GoDaddy DNS ZONE FILE页面"><br>这样一来你自己的域名就指向了GitHub Pages的主页，不过DNS设置成功后需要等待一段时间让全球服务器同步（我大概等了10多分钟），其间你也可以<code>ping</code>一下你的域名，看看ip地址是否已指向正确。</your_github_name></p>
+<h3 id="向GitHub_Pages中添加CNAME文件">向GitHub Pages中添加CNAME文件</h3><p>如果想让<code>http://&lt;YOUR_GITHUB_NAME&gt;.github.io</code>在浏览器的地址栏中彻底消失，还得为其添加别名。好在GitHub Pages本身就支持CNAME，我们所要做的就只是在<code>/source</code>目录下新建一个文件<code>CNAME</code>，里面填入你的域名即可，例如<code>fangjb.me</code>，前面不用带<code>www.</code>，<code>hexo g</code>一下，然后再<code>hexo d</code>，部署成功后在浏览器中敲入网址<code>&lt;YOUR_GITHUB_NAME&gt;.github.io</code>随即会自动变为<code>CNAME</code>中所定义的域名。</p>
+<h2 id="其他辅助模块">其他辅助模块</h2><p>恭喜，到这一步其实一个完整的个人博客就已经搭建成功了，后面会继续介绍两个额外的辅助功能模块：“多说”留言板和网站统计，如果你觉得不必要可以就此打住。</p>
+<h3 id="“多说”留言板">“多说”留言板</h3><p>Hexo默认提供的留言板是Disqus，Disqus挺好的，但由于其在墙外，一个加载比较慢，另一个每当我想登录时看到下面的4个按钮，都会有身为天朝人民的自豪感。。。<br><img src="/img/201503/disqus.png" alt="Disqus留言板"><br>好吧，既然这样我们就用自己的民族产品吧，好在确实有这么一款也很优秀的国产评论系统，也就是<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>，支持新浪微博、百度、QQ、人人网等国内各大网站的账号直接登陆，界面也很清爽，加载速度快，于是成为了一个很不错的留言板替换方案。</p>
+<p>在<code>Jackman</code>主题中使用“多说”也是很方便的一件事情，主题作者已经加入了支持（在此表示感谢），找到<code>/themes/jacman/_config.yml</code>文件，找到以下内容并填入你在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>上注册的<code>short_name</code>即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#### Comment</span></span><br><span class="line">duoshuo_shortname: fice <span class="comment">## e.g. wuchong   your duoshuo short name.</span></span><br><span class="line">disqus_shortname:  <span class="comment">## e.g. wuchong   your disqus short name.</span></span><br></pre></td></tr></table></figure></p>
+<p>例如我的多说<code>duoshuo_shortname</code>就是<code>fice</code>，这个名称在“多说”的设置界面中可以找到：<br><img src="/img/201503/duoshuo.png" alt="多说设置页面"><br>设置好后重新生成并部署即可使用“多说”留言板了！</p>
+<h3 id="百度统计">百度统计</h3><p><a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计</a>可以帮你统计都有哪些ip的人在何时访问了你的网站，网站每天的流量如何等等信息，虽然对于博客来说不是必备的东西，但我觉得也是蛮有意思的。。。<br><img src="/img/201503/baidu_tongji_1.png" alt="百度统计结果图"><br>好吧，我这数据太丑了。。。在<a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计官网</a>注册账号，并填入博客的相关信息后，然后在【网站中心】下的【代码获取】页面中可以找到你所注册网址的一串<code>sitecode</code>，<code>ctrl+c</code>一下之后会用到，如下图所示：<br><img src="/img/201503/baidu_tongji_3.png" alt="百度统计代码获取"><br>复制好后回到我们的博客，在<code>/themes/jacman/_config.yml</code>文件中可以找到如下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#### Analytics</span></span><br><span class="line">baidu_tongji:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  sitecode: &lt;YOUR_SITECODE&gt;</span><br></pre></td></tr></table></figure></p>
+<p>yes，主题作者又一次帮我们写好了相关支持，只需将之前所记录的<code>sitecode</code>值填入即可，重新生成生成并部署，再回到百度统计的配置页，检测是否设置成功：<br><img src="/img/201503/baidu_tongji_2.png" alt="百度统计测试界面"></p>
+<p>“悲剧！为何我检测出的结果是失败？”</p>
+<p>好吧，其实我一开始也是失败的，查看主题的源代码后会发现页面模板中嵌入的百度统计脚本有问题。。。可能是百度统计换了代码，或者主题作者还没来得及更新，需要找到<code>/themes/jacman/layout/_partial/analytics.ejs</code>文件，打开后中间那一段就是有关百度统计的脚本加载，更换为如下内容即可：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.baidu_tongji.enable)&#123; %&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line"><span class="keyword">var</span> _hmt = _hmt || [];</span><br><span class="line">(<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> hm = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</span><br><span class="line">  hm.src = <span class="string">"//hm.baidu.com/hm.js?&lt;%= theme.baidu_tongji.sitecode %&gt;"</span>;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="built_in">document</span>.getElementsByTagName(<span class="string">"script"</span>)[<span class="number">0</span>]; </span><br><span class="line">  s.parentNode.insertBefore(hm, s);</span><br><span class="line">&#125;)();</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">%</span> &#125; %&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>重新生成并部署后，再次回到百度统计的测试界面，点击测试按钮应该就会出现上图“代码安装正确”的结果了。</p>
+<h2 id="CONGRATULATIONS">CONGRATULATIONS</h2><p>大功告成！一个简单清新且功能还算完备的博客网站就此诞生，祝愿它可以走的很远，很远。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/tech/">技术</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://fice.me/2015/03/14/hello-fangjb/" data-title="Hello fangjb.me! - Hexo个人博客搭建流程 | fice&#39;s blog" data-tsina="2418941330" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/03/14/hello-fangjb/" data-title="Hello fangjb.me! - Hexo个人博客搭建流程" data-url="http://fice.me/2015/03/14/hello-fangjb/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建Hexo博客"><span class="toc-number">1.</span> <span class="toc-text">搭建Hexo博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Hexo"><span class="toc-number">1.1.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#建立本地博客"><span class="toc-number">1.2.</span> <span class="toc-text">建立本地博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改博客配置"><span class="toc-number">1.3.</span> <span class="toc-text">修改博客配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写博客"><span class="toc-number">1.4.</span> <span class="toc-text">写博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换博客主题"><span class="toc-number">1.5.</span> <span class="toc-text">更换博客主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署至GitHub_Pages"><span class="toc-number">1.6.</span> <span class="toc-text">部署至GitHub Pages</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绑定自己的域名"><span class="toc-number">2.</span> <span class="toc-text">绑定自己的域名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#购买域名"><span class="toc-number">2.1.</span> <span class="toc-text">购买域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置DNS"><span class="toc-number">2.2.</span> <span class="toc-text">配置DNS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#向GitHub_Pages中添加CNAME文件"><span class="toc-number">2.3.</span> <span class="toc-text">向GitHub Pages中添加CNAME文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他辅助模块"><span class="toc-number">3.</span> <span class="toc-text">其他辅助模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#“多说”留言板"><span class="toc-number">3.1.</span> <span class="toc-text">“多说”留言板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#百度统计"><span class="toc-number">3.2.</span> <span class="toc-text">百度统计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CONGRATULATIONS"><span class="toc-number">4.</span> <span class="toc-text">CONGRATULATIONS</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+		
+		  
+			<li><a href="/categories/tech/" title="技术">技术<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://tagsys.org" target="_blank" title=" 清华软院TagSys实验室 - 世界顶尖的RFID研究小组">TagSys Lab</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://whlontheroad.com" target="_blank" title=" Hongliang Wei's site">ON THE ROAD</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi, I&#39;m Jianbing Fang. <br/>
+			This is my blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2418941330" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianbingfang" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:jianbingfang@qq.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="http://fice.me/about" target="_blank" title="fice">fice</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fice"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script type="text/javascript">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9108e18ab3fc099db879b6d4356be386";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
