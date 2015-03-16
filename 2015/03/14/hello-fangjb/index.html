@@ -104,11 +104,12 @@
 		
 		</div>
 		
-		<p>其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的<a href="http://whlontheroad.com" target="_blank" rel="external">whl</a>同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够帮助到您。第一篇也不知道写点什么好，索性就把本站的建立过程介绍一下吧，简单来说这是一个用Hexo建立并托管在GitHub Pages上的静态博客。</p>
-<a id="more"></a>
+		<p>其实出于跟风和好奇，这个博客从半年前就开始躺在我的电脑硬盘里，空空的，静静的，以至于很长一段时间我都忘记了它。对于我这种从小不写日记、上课不做笔记的人来说，写博客着实也是个挑战，直至前几日和一位二回帝都奋斗的<a href="http://whlontheroad.com" target="_blank" rel="external">whl</a>同学聊天时，觉得是时候改变一下了，于是周末花了两天功夫把沉睡已久的博客重新整理了一下并发布到网上，希望能在这里将自己所学的技术和思想沉淀下来，让自己不再浮躁，同时也希望本博客中的内容能够帮助到您。</p>
+<p>第一篇也不知道写点什么好，索性就把本站的建立过程介绍一下吧，简单来说这是一个用Hexo建立并托管在GitHub Pages上的静态博客。</p>
 <h2 id="搭建Hexo博客">搭建Hexo博客</h2><h3 id="安装Hexo">安装Hexo</h3><p><a href="http://hexo.io" target="_blank" rel="external">Hexo</a>是一个基于<a href="http://nodejs.org" target="_blank" rel="external">Node.js</a>的开源博客系统，出自台湾的一位大学生之手（表示膜拜…）。方便、快速、支持Markdown、易部署、插件众多，对于程序猿来说简直是不可多得的好工具，如果已经安装过Node.js，那么只需要在Node控制台里<code>npm install hexo -g</code>一下即可使用（如果您未使用过Node.js，可移步<a href="http://nodejs.org" target="_blank" rel="external">Node官网</a>下载安装）。</p>
 <h3 id="建立本地博客">建立本地博客</h3><p>Hexo安装好后，建立一个本地的博客系统就是一件非常简单的事了，只需要再执行如下几行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;  // 初始化博客到文件夹&lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;         // 切换工作目录到&lt;folder&gt;</span><br><span class="line">$ npm install         // 安装博客系统相关插件</span><br><span class="line">$ hexo g              // 或hexo generate, 将md文件编译生成本地静态html文件</span><br><span class="line">$ hexo s              // 或hexo server, 启动hexo本地服务器</span><br></pre></td></tr></table></figure></p>
 <p>此时打开浏览器，输入<a href="http://localhost:4000" target="_blank" rel="external">localhost:4000</a>即可看到博客的初始界面。</p>
+<a id="more"></a>
 <h3 id="修改博客配置">修改博客配置</h3><p>Hexo中主要的配置项都在根目录下的<code>_config.yml</code>文件里，配置项名称都浅显易懂，更详细的配置可参考这篇博文，我也是按照那的介绍做的，这里不再做重复工作。</p>
 <p>比较重要的一点是配置<code>deploy</code>项，为了方便之后直接用命令<code>hexo d</code>或<code>hexo deploy</code>一键部署到GitHub Pages上（如果您还不了解什么是GitHub Pages，请移步<a href="https://pages.github.com/" target="_blank" rel="external">这里</a>并给自己建一个~），需要先给Hexo安装<code>node-git-deploy</code>插件(Hexo 3.0版本开始默认不包含该插件了)，安装命令如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-git-deploy --save</span><br></pre></td></tr></table></figure></p>
 <p>然后修改<code>_config.yml</code>里的内容：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github<span class="class">.com</span>:&lt;YOUR_GITHUB_NAME&gt;/&lt;YOUR_GITHUB_NAME&gt;<span class="class">.github</span><span class="class">.com</span><span class="class">.git</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
@@ -195,8 +196,6 @@
 		<ul>
 		
 		  
-		
-		  
 			<li><a href="/categories/tech/" title="技术">技术<sup>1</sup></a></li>
 		  
 		
@@ -256,7 +255,7 @@
 	
 	<section class="info">
 		<p> Hi, I&#39;m Jianbing Fang. <br/>
-			This is my blog.</p>
+			This is my tech blog, just feel free</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
