@@ -98,7 +98,7 @@
 <p>心想不至于吧，才一个月就撑爆硬盘啦？半信半疑地敲了个<code>df</code>，我去，还真的爆了。。。整整100G，没办法，删吧。删了半天，终于从<a href="http://www.mongovue.com" target="_blank" rel="external">MongoVUE</a>里查看到数据库大小从100G降到了60G，感觉差不多了，结果重启程序还是熟悉的那一行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ERROR] MongoDB: Can<span class="string">'t take a write lock while out of disk space</span></span><br></pre></td></tr></table></figure></p>
 <p>逗我么，40G还不够用？我又<code>df</code>查看了下硬盘空间，已用依然100%！原来问题才刚刚开始。。。</p>
 <a id="more"></a>
-<p>是的，当我们执行<code>db.collection.remove()</code>之后，MongoDB并不会把所删数据相应的空间交还给操作系统，而是依然自己占用管理着以备之后的数据使用，主要也考虑到重新整理磁盘上数据存储位置的代价，避免产生过多的碎片（不同的是如果执行<code>db.collection.drop()</code>，MongoDB则会立即释放磁盘空间）。</p>
+<p>是的，当我们执行<code>db.collection.remove()</code>之后，MongoDB并不会把所删数据相应的空间交还给操作系统，而是依然自己占用管理着以备之后的数据使用，主要也考虑到重新整理磁盘上数据存储位置的代价，避免产生过多的碎片（不同的是如果执行<code>db.dropDatabase()</code>，MongoDB则会立即释放磁盘空间）。</p>
 <p>那么有什么办法可以让MongoDB立即释放这些被删除的空间么？</p>
 <p>当然是有的，用<code>db.repairDatabase()</code>命令（或者在Mongo shell外执行<code>mongod --repair</code>）就可以完成这件事，它会让MongoDB重新整理数据存储并压缩无用空间，从而把多余的磁盘空间交还给操作系统（需要注意的是<code>repair</code>的操作时间较长，期间不要对数据库有其他读写操作，否则可能会出问题）。</p>
 <p>既然如此就赶紧走一个！<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cannot repair database muselog142b having size: <span class="number">107052168476</span> (bytes) because free disk space is: <span class="number">14325</span> (bytes)</span><br></pre></td></tr></table></figure></p>
