@@ -105,7 +105,7 @@
 <p>Holy shit！连执行<code>repair</code>操作的空间都不够。。。后来上网查阅资料，原来MongoDB需要一个与已占空间至少同样大的空间来辅助完成<code>repair</code>操作，也就是说我还得再有100G的可用空间才行。。。泪奔，本来就是因为没空间了才搞这事，竟然还雪上加霜地要求我再提供100G空间 = =。</p>
 <p>好吧，看来单机是很难完成这个任务了，于是想到是否可以把数据先转移到另一台机器上，然后把服务器上的数据库直接<code>drop</code>掉。那么问题来了，另外一台机器是否也需要有至少100G的空间才能完整接收呢？个人直觉不用，既然是导出数据，MongoDB为何要把那些没用的、已经删掉的数据内容也一起弄出来呢，所以我觉得MongoDB应该会只取出实际数据进行网络传输。看一看自己电脑的硬盘空间，剩余70G，而服务器数据库中数据实际大小60G，刚刚好，于是就这么办，打开自己本地的MongoDB，执行复制数据库命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">db.copyDatabase(SERVER_DB_NAME, LOCAL_DB_NAME, SERVER_IP, USERNAME, PASSWORD)</span><br></pre></td></tr></table></figure></p>
 <p>等待许久后终于迎来了一个好消息：全部复制成功！于是回到服务器端直接<code>db.collection.drop()</code>掉了原表，然后如法炮制，重新回到服务器端的Mongo shell中执行<code>db.copyDatabase()</code>，将本地精简过后的数据再拷贝回服务器的MongoDB，至此大功告成！</p>
-<p>这事折腾了一天，但也告诉了我们数据库的空间使用情况不能等到最后关头才意识到问题，再去想办法解决（如果是生产系统就完蛋了），而应该有提前的预警，比如剩余空间不足50%时、不足20%时自动通知相关维护人员，尽早做出相应措施。另外对于MongoDB技术上的使用也需要更上一个台阶，随着数据量的日益增大，以后可能还要考虑使用MongoDB的分布式集群架构。</p>
+<p>这事折腾了一天，但也告诉了我们数据库的空间使用情况不能等到最后关头才意识到问题，再去想办法解决（如果是生产系统就完蛋了），而应该有提前的预警，比当磁盘剩余空间不足50%时、不足20%时自动通知相关维护人员，尽早做出相应措施。另外对于MongoDB技术上的使用也需要更上一个台阶，随着数据量的日益增大，以后可能还要考虑使用MongoDB的分布式集群架构。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -218,7 +218,7 @@
         
           <li>
             
-            	<a href="http://whlontheroad.com" target="_blank" title=" Hongliang Wei's site">ON THE ROAD</a>
+            	<a href="http://whlminds.com" target="_blank" title=" 魏红亮的博客">Free Minds</a>
             
           </li>
         
